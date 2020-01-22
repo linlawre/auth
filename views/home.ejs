@@ -1,0 +1,17 @@
+<% include ../partial/header %>
+
+<% db.forEach(function(db){%>
+
+<img src="<%= db.URL %>" style="width:400px;height:300;">
+
+
+
+<p><%= db.title %></p>
+<p><%= db.content %></p>
+<p><%= db.created %></p>
+<p>
+    <a class="btn btn-primary" href="/<%= db._id %>">More Info</a>
+</p>
+<% }); %>
+
+<%include ../partial/footer%>

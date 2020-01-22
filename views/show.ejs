@@ -1,0 +1,29 @@
+<% include ../partial/header %>
+
+<a class="btn btn-primary btn-" href="/">Go back</a>
+
+<a class="btn btn-primary btn-" href="/<%= db._id %>/edit">Edit</a>
+
+<form action="/<%= db._id %>?_method=DELETE" method = "POST">
+    <button class="ui red basic button">Delete</button>                         <!-- Remenber to use css to align the buttons -->
+</form>
+
+<br>
+<br>   
+
+<img src="<%= db.URL %>">
+
+<br>
+<br>      
+
+<p>Title: </p>
+<p><%= db.title %></p>
+
+<br>
+<br>
+
+<p>Description: </p>
+<p><%= db.content %></p>
+<p><%= db.created %></p>
+
+<% include ../partial/footer %>

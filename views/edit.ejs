@@ -1,0 +1,40 @@
+<%include ../partial/header%>
+
+<div class="ui main text container segment">
+    
+    <div class="form">
+    
+    <h1>Edit the dog property</h1>
+
+    <br>
+    <br>
+    
+    <form action="/<%= db._id %>?_method=PUT" method = "POST" class="px-4 py-3">
+        
+        <label for="dog_name">Dog title</label>
+        <br>
+        <input type="text" class="form-control" id="dog_name" value=<%= db.title %> name = "blog[title]">
+        
+        <br>
+        <label for="URL">URL</label>
+        <br>
+        <input type="text" class="form-control" id="URL" value= <%= db.URL %> name = "blog[URL]">
+        
+        <br>
+        <label for="Des">Content</label>
+        <br>
+        
+        <textarea type="text" class="form-control" id="Des" name = "blog[content]"><%= db.content %></textarea>
+        
+        <br>
+        <button type="Update" class="btn btn-primary">Submit</button>
+        <br>
+        <br>
+    </form>
+</div>
+    
+    
+    
+</div>
+
+<%include ../partial/footer%>

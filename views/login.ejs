@@ -1,0 +1,26 @@
+<%include ../partial/header%>
+
+<div class="ui main text container segment">
+    <div class="form">
+    <h1>Login page!</h1>
+    <br>
+
+    <form action="/login" method = "POST" class="px-4 py-3">
+        
+        <label for="username">Username</label>
+        <br>
+        <input type="text" class="form-control" id="username" placeholder="username" name = "username">
+        <br>
+        <label for="password">Password</label>
+        <br>
+        <input type="text" class="form-control" id="password" placeholder="username" name = "password">
+        <br>
+        <br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <br>
+        <br>
+    </form>
+    </div>
+</div>
+
+<%include ../partial/footer%>
